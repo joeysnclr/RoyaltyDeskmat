@@ -1,32 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins&display=swap');
 
 * {
     margin: 0;
-    color: #333333;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #1A1A1A;
+    color: white;
 }
 p {
     margin-top: 0;
 }
+
+
+
 .main {
     width: 90%;
     max-width: 600px;
     height: 200px;
-    margin: auto;
+    margin: 20px auto;
 }
 
 
 .main .header {
-    margin: 30px 0px;
+    width: 100%;
     text-align: center;
 }
+.main .header .logo {
+    max-width: 60px;
+    width: 20%;
+}
 
-.main img {
+.main .header .all {
     width: 100%;
 }
+.header h1 {
+    color: #C89E49;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Merriweather', serif;
+}
+
+
+.landing-img {
+    margin-top: 60px;
+    width: 100%;
+}
+.landing-img h2 {
+    opacity: .8;
+    text-align: center;
+}
+.landing-img .variant {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.landing-img img {
+    width: 100%
+}
+.landing-img .variantButton {
+    border-radius: 0;
+    background-color: #333333;
+    color: white;
+    border: none;
+    margin: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 25%;
+    text-align: center;
+} 
+.landing-img .variantToggles {
+    display: flex;
+    flex-direction: row;
+}
+
+
 
 .more-info {
     display: flex;
@@ -40,12 +89,47 @@ p {
     width: 33%;
 }
 .more-info p {
+    opacity: .7;
     font-size: 14px;
+}
+.more-info h2 {
+    color: #C89E49;
 }
 
 
+.vendors {
+    margin-top: 60px;
+    padding-bottom: 100px;
+}
+.vendors h2 {
+    opacity: .8;
+    text-align: center;
+}
+.vendors table {
+    width: 100%;
+    text-align: center;
+}
+.vendors table td {
+    width: 33%;
+}
 
 
+.links {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.links a {
+    font-size: 24px;
+    color: white;
+    opacity: .6;
+    transition: color .5s, opacity 1s;
+    margin: 0 20px;
+}
+.links a:hover {
+    color: #C89E49;
+    opacity: 1;
+}
 
 
 @media only screen and (max-width: 600px) {

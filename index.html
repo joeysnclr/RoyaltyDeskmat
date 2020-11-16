@@ -4,21 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Royalty Deskmat</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./tabs.css">
     <script src="./tabs.js"></script>
 </head>
 <body>
 
     <div class="main">
         <div class="header">
+            <img class="logo" src="./images/logo.png" alt="">
             <h1>Royalty Deskmat</h1>
+            <img class="all" src="./images/all1.png" alt="">
         </div>
-        <img src="https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png" alt="">
+
         <div class="more-info">
             <div>
                 <p>Status</p>
-                <h2>Pre IC</h2>
+                <h2>IC Period</h2>
             </div>
             <div>
                 <p>GB Period</p>
@@ -29,12 +31,36 @@
                 <h2>TBD</h2>
             </div>
         </div>
+        <div class="links">
+            <a href="https://www.instagram.com/jsin.design" target="blank_"><i class="fab fa-instagram"></i></a>
+            <a href="https://discord.gg/EQVapWdycg" target="blank_"><i class="fab fa-discord"></i></a>
+            <a href="" target="blank_"><i class="fab fa-reddit"></i></a>
+            <a href="" target="blank_"><i class="fas fa-keyboard"></i></a>
+        </div>
+        <div class="landing-img">
+            <h2>Colors</h2>
+            <img src="./images/black.png" id="Black" class="variant" style="display:block">
+            </img>
+            <img src="./images/red.png" id="Red" class="variant" style="display:none">
+            </img>
+            <img src="./images/blue.png" id="Blue" class="variant" style="display:none">
+            </img>
+            <img src="./images/green.png" id="Green" class="variant" style="display:none">
+            </img>
+             <div class="variantToggles">
+                <p style="background-color: #1E1E1E;" class="variantButton" onclick="openVariant('Black')">Black</p>
+                <p style="background-color: #5C0613;" class="variantButton" onclick="openVariant('Red')">Red</p>
+                <p style="background-color: #2B265C;" class="variantButton" onclick="openVariant('Blue')">Blue</p>
+                <p style="background-color: #003714;" class="variantButton" onclick="openVariant('Green')">Green</p>
+            </div>
+        </div>
         <div class="vendors">
-            <table>
+            <h2>Vendors - TBD</h2>
+            <table hidden>
                 <tr>
-                    <td>US</td>
-                    <td>TBD</td>
-                    <td>$TBD</td>
+                    <td class="region">US</td>
+                    <td class="vendor"><a href="">TBD</a></td>
+                    <td class="price">$TBD</td>
                 </tr>
             </table>
         </div>
